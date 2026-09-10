@@ -1,0 +1,8 @@
+{
+  "name": "QuickUI",
+  "description": "Sistema de gestión de inventario de taller y distribución física de gavetas y repuestos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

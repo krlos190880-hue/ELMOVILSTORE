@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #006194;
+  --color-primary-container: #007bb9;
+  --color-primary-fixed: #cce5ff;
+  --color-primary-fixed-dim: #93ccff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fdfcff;
+  --color-on-primary-fixed: #001d31;
+  --color-on-primary-fixed-variant: #004b73;
+
+  --color-secondary: #006591;
+  --color-secondary-container: #39b8fd;
+  --color-secondary-fixed: #c9e6ff;
+  --color-secondary-fixed-dim: #89ceff;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #004666;
+  --color-on-secondary-fixed: #001e2f;
+
+  --color-tertiary: #545c72;
+  --color-tertiary-container: #6c748b;
+  --color-tertiary-fixed: #dae2fd;
+  --color-tertiary-fixed-dim: #bec6e0;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fefcff;
+
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface: #f8f9ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #3f4850;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-variant: #d3e4fe;
+  --color-surface-tint: #006398;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-inverse-primary: #93ccff;
+
+  --color-outline: #707881;
+  --color-outline-variant: #bfc7d2;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --font-display-lg: "Space Grotesk", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-headline-lg-mobile: "Space Grotesk", sans-serif;
+  --font-title-sm: "Hanken Grotesk", sans-serif;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-label-sm: "Hanken Grotesk", sans-serif;
+  --font-metric-badge: "JetBrains Mono", monospace;
+  --font-code-sm: "JetBrains Mono", monospace;
+}
+
+/* Custom laser animation */
+@keyframes scanLaser {
+  0% {
+    top: 6%;
+    opacity: 0.85;
+  }
+  50% {
+    top: 94%;
+    opacity: 1;
+  }
+  100% {
+    top: 6%;
+    opacity: 0.85;
+  }
+}
+
+.scanner-line {
+  animation: scanLaser 2.2s ease-in-out infinite;
+}
+
+.optical-grid {
+  background-image: 
+    linear-gradient(to right, rgba(57, 184, 253, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(57, 184, 253, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  display: inline-block;
+  vertical-align: middle;
+}
